@@ -32,7 +32,7 @@ export default class Media extends Component {
   }
   componentDidMount() {
     axios
-      .get(`http://5dd1894f15bbc2001448d28e.mockapi.io/playlist`)
+      .get(`https://5dd1894f15bbc2001448d28e.mockapi.io/playlist`)
       .then(res => {
         const songs = res.data;
         this.setState({ songs });
